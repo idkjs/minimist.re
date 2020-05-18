@@ -4,7 +4,7 @@
   "scripts": {
     "start": "bsb -make-world -w -backend native",
     "build": "bsb -make-world -backend native",
-    "test": "./lib/bs/native/test.native --verbose ./test",
+    "test": "./test.exe --verbose ./test",
     "clean": "bsb -clean-world"
   },
   "repository": {
@@ -17,6 +17,7 @@
   "author": "Jared Forsyth",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "bsansouci/bsb-native#2.1.1"
+    "bsb-native": "^5.0.3",
+    "bs-platform-native": "0.0.12"
   }
 }
